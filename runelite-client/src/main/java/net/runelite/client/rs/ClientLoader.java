@@ -167,7 +167,7 @@ public class ClientLoader implements Supplier<Applet>
 
 				SplashScreen.stage(.40, null, "Loading client");
 
-				File oprsInjected = new File(System.getProperty("user.home") + "/.openosrs/cache/injected-client.jar");
+				File oprsInjected = new File(System.getProperty("user.home") + "/.lucidscape/cache/injected-client.jar");
 				if (updateCheckMode == AUTO)
 				{
 					writeInjectedClient(oprsInjected);
@@ -216,7 +216,7 @@ public class ClientLoader implements Supplier<Applet>
 
 				if (Strings.isNullOrEmpty(config.getCodeBase()) || Strings.isNullOrEmpty(config.getInitialJar()) || Strings.isNullOrEmpty(config.getInitialClass()))
 				{
-					throw new IOException("Invalid or missing jav_config");
+					throw new IOException("Invalid or missing jav_config: " + url.uri());
 				}
 
 				return config;
@@ -332,7 +332,7 @@ public class ClientLoader implements Supplier<Applet>
 			{
 				String codebase = config.getCodeBase();
 				String initialJar = config.getInitialJar();
-				url = HttpUrl.get(codebase + initialJar);
+				url = HttpUrl.get(/*codebase*/ "https://lucidsoft.tech/rsps/osrs/206/gamepack.jar");
 			}
 
 			for (int attempt = 0; ; attempt++)

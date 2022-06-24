@@ -11,7 +11,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3093;
+	public static final ServerPacket RUN_CLIENTSCRIPT;
 	@ObfuscatedName("v")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -136,7 +136,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3061;
+	public static final ServerPacket MINIMAP_FLAG_SET;
 	@ObfuscatedName("ad")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -201,7 +201,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3069;
+	public static final ServerPacket MESSAGE_GAME;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -226,7 +226,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3127;
+	public static final ServerPacket RESET_CLIENT_VARCACHE;
 	@ObfuscatedName("ai")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -241,7 +241,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3082;
+	public static final ServerPacket REBUILD_NORMAL;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -251,12 +251,12 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3084;
+	public static final ServerPacket IF_OPEN_TOP;
 	@ObfuscatedName("aa")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3085;
+	public static final ServerPacket IF_OPEN_SUB;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -281,12 +281,12 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3090;
+	public static final ServerPacket PLAYER_INFO;
 	@ObfuscatedName("bf")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3091;
+	public static final ServerPacket UPDATE_STAT;
 	@ObfuscatedName("bg")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -371,7 +371,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3081;
+	public static final ServerPacket VARP_LARGE;
 	@ObfuscatedName("bx")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -386,7 +386,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3111;
+	public static final ServerPacket UPDATE_RUN_ENERGY;
 	@ObfuscatedName("bj")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -491,7 +491,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3132;
+	public static final ServerPacket VARP_SMALL;
 	@ObfuscatedName("ck")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -526,7 +526,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3139;
+	public static final ServerPacket UPDATE_EQUIPMENT_WEIGHT;
 	@ObfuscatedName("dm")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -546,7 +546,7 @@ public class ServerPacket {
 	public final int length;
 
 	static {
-		field3093 = new ServerPacket(0, -2); // L: 5
+		RUN_CLIENTSCRIPT = new ServerPacket(0, -2); // L: 5
 		field3037 = new ServerPacket(1, 12); // L: 6
 		field3038 = new ServerPacket(2, 3); // L: 7
 		field3118 = new ServerPacket(3, 15); // L: 8
@@ -571,7 +571,7 @@ public class ServerPacket {
 		field3058 = new ServerPacket(22, -2); // L: 27
 		field3097 = new ServerPacket(23, -2); // L: 28
 		field3079 = new ServerPacket(24, 2); // L: 29
-		field3061 = new ServerPacket(25, 2); // L: 30
+		MINIMAP_FLAG_SET = new ServerPacket(25, 2); // L: 30
 		field3051 = new ServerPacket(26, 2); // L: 31
 		field3063 = new ServerPacket(27, 5); // L: 32
 		field3044 = new ServerPacket(28, 0); // L: 33
@@ -584,24 +584,24 @@ public class ServerPacket {
 		field3071 = new ServerPacket(35, 1); // L: 40
 		field3129 = new ServerPacket(36, 4); // L: 41
 		field3042 = new ServerPacket(37, -2); // L: 42
-		field3069 = new ServerPacket(38, -1); // L: 43
+		MESSAGE_GAME = new ServerPacket(38, -1); // L: 43
 		field3075 = new ServerPacket(39, 1); // L: 44
 		field3076 = new ServerPacket(40, 0); // L: 45
 		field3110 = new ServerPacket(41, 1); // L: 46
 		field3078 = new ServerPacket(42, 4); // L: 47
-		field3127 = new ServerPacket(43, 0); // L: 48
+		RESET_CLIENT_VARCACHE = new ServerPacket(43, 0); // L: 48
 		field3080 = new ServerPacket(44, 4); // L: 49
 		field3126 = new ServerPacket(45, 6); // L: 50
-		field3082 = new ServerPacket(46, -2); // L: 51
+		REBUILD_NORMAL = new ServerPacket(46, -2); // L: 51
 		field3083 = new ServerPacket(47, -2); // L: 52
-		field3084 = new ServerPacket(48, 2); // L: 53
-		field3085 = new ServerPacket(49, 7); // L: 54
+		IF_OPEN_TOP = new ServerPacket(48, 2); // L: 53
+		IF_OPEN_SUB = new ServerPacket(49, 7); // L: 54
 		field3086 = new ServerPacket(50, -1); // L: 55
 		field3087 = new ServerPacket(51, 8); // L: 56
 		field3088 = new ServerPacket(52, -2); // L: 57
 		field3060 = new ServerPacket(53, 10); // L: 58
-		field3090 = new ServerPacket(54, -2); // L: 59
-		field3091 = new ServerPacket(55, 6); // L: 60
+		PLAYER_INFO = new ServerPacket(54, -2); // L: 59
+		UPDATE_STAT = new ServerPacket(55, 6); // L: 60
 		field3096 = new ServerPacket(56, 1); // L: 61
 		field3140 = new ServerPacket(57, 4); // L: 62
 		field3094 = new ServerPacket(58, 20); // L: 63
@@ -618,10 +618,10 @@ public class ServerPacket {
 		field3105 = new ServerPacket(69, -2); // L: 74
 		field3047 = new ServerPacket(70, 6); // L: 75
 		field3107 = new ServerPacket(71, 0); // L: 76
-		field3081 = new ServerPacket(72, 6); // L: 77
+		VARP_LARGE = new ServerPacket(72, 6); // L: 77
 		field3106 = new ServerPacket(73, -2); // L: 78
 		field3074 = new ServerPacket(74, 10); // L: 79
-		field3111 = new ServerPacket(75, 1); // L: 80
+		UPDATE_RUN_ENERGY = new ServerPacket(75, 1); // L: 80
 		field3112 = new ServerPacket(76, -2); // L: 81
 		field3073 = new ServerPacket(77, 1); // L: 82
 		field3114 = new ServerPacket(78, -1); // L: 83
@@ -642,14 +642,14 @@ public class ServerPacket {
 		field3102 = new ServerPacket(93, 8); // L: 98
 		field3065 = new ServerPacket(94, -2);
 		field3131 = new ServerPacket(95, -2);
-		field3132 = new ServerPacket(96, 3); // L: 101
+		VARP_SMALL = new ServerPacket(96, 3); // L: 101
 		field3133 = new ServerPacket(97, 4); // L: 102
 		field3134 = new ServerPacket(98, -2);
 		field3135 = new ServerPacket(99, 2);
 		field3136 = new ServerPacket(100, -2); // L: 105
 		field3137 = new ServerPacket(101, -2); // L: 106
 		field3115 = new ServerPacket(102, -2); // L: 107
-		field3139 = new ServerPacket(103, 2);
+		UPDATE_EQUIPMENT_WEIGHT = new ServerPacket(103, 2);
 		field3098 = new ServerPacket(104, -2); // L: 109
 	}
 

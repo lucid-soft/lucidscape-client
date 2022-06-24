@@ -184,7 +184,7 @@ public class FriendsList extends UserList {
 			var8.packetBuffer.method7763(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 8847
 			var8.packetBuffer.writeIntME(var3); // L: 8848
 			var8.packetBuffer.writeShort(WorldMapIcon_0.selectedItemId); // L: 8849
-			var8.packetBuffer.method7784(ModeWhere.selectedItemWidget); // L: 8850
+			var8.packetBuffer.readIntIME(ModeWhere.selectedItemWidget); // L: 8850
 			var8.packetBuffer.writeShort(var0 + class28.baseX); // L: 8851
 			Client.packetWriter.addNode(var8); // L: 8852
 		} else if (var2 == 2) {
@@ -200,7 +200,7 @@ public class FriendsList extends UserList {
 			var8.packetBuffer.method7929(var0 + class28.baseX); // L: 8939
 			var8.packetBuffer.writeIntME(Client.selectedSpellChildIndex); // L: 8940
 			var8.packetBuffer.method7763(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 8941
-			var8.packetBuffer.method7784(NetCache.selectedSpellWidget); // L: 8942
+			var8.packetBuffer.readIntIME(NetCache.selectedSpellWidget); // L: 8942
 			var8.packetBuffer.method7863(Client.selectedSpellItemId); // L: 8943
 			Client.packetWriter.addNode(var8); // L: 8944
 		} else if (var2 == 3) {
@@ -285,7 +285,7 @@ public class FriendsList extends UserList {
 					Client.destinationX = var0; // L: 9011
 					Client.destinationY = var1; // L: 9012
 					var9 = EnumComposition.getPacketBufferNode(ClientPacket.field2911, Client.packetWriter.isaacCipher); // L: 9013
-					var9.packetBuffer.method7760(NetCache.selectedSpellWidget); // L: 9014
+					var9.packetBuffer.writeIntLE(NetCache.selectedSpellWidget); // L: 9014
 					var9.packetBuffer.writeShort(Client.selectedSpellChildIndex); // L: 9015
 					var9.packetBuffer.writeShort(Client.selectedSpellItemId); // L: 9016
 					var9.packetBuffer.method7929(var3); // L: 9017
@@ -428,7 +428,7 @@ public class FriendsList extends UserList {
 					var8.packetBuffer.method7929(Client.selectedSpellChildIndex); // L: 9489
 					var8.packetBuffer.writeIntME(Client.selectedSpellItemId); // L: 9490
 					var8.packetBuffer.method7863(WorldMapLabelSize.baseY + var1); // L: 9491
-					var8.packetBuffer.method7760(NetCache.selectedSpellWidget); // L: 9492
+					var8.packetBuffer.writeIntLE(NetCache.selectedSpellWidget); // L: 9492
 					Client.packetWriter.addNode(var8); // L: 9493
 				} else if (var2 == 18) {
 					Client.mouseCrossX = var6; // L: 9061
@@ -576,8 +576,8 @@ public class FriendsList extends UserList {
 							} else if (var2 == 31) {
 								var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2993, Client.packetWriter.isaacCipher); // L: 9431
 								var8.packetBuffer.method7929(EnumComposition.selectedItemSlot); // L: 9432
-								var8.packetBuffer.method7784(var1); // L: 9433
-								var8.packetBuffer.method7783(ModeWhere.selectedItemWidget); // L: 9434
+								var8.packetBuffer.readIntIME(var1); // L: 9433
+								var8.packetBuffer.readIntME(ModeWhere.selectedItemWidget); // L: 9434
 								var8.packetBuffer.method7929(var0); // L: 9435
 								var8.packetBuffer.method7863(WorldMapIcon_0.selectedItemId); // L: 9436
 								var8.packetBuffer.writeIntME(var3); // L: 9437
@@ -590,7 +590,7 @@ public class FriendsList extends UserList {
 								var8.packetBuffer.writeInt(var1); // L: 9299
 								var8.packetBuffer.writeShort(var3); // L: 9300
 								var8.packetBuffer.writeIntME(Client.selectedSpellChildIndex); // L: 9301
-								var8.packetBuffer.method7760(NetCache.selectedSpellWidget); // L: 9302
+								var8.packetBuffer.writeIntLE(NetCache.selectedSpellWidget); // L: 9302
 								var8.packetBuffer.method7929(var0); // L: 9303
 								Client.packetWriter.addNode(var8); // L: 9304
 								Client.field599 = 0; // L: 9305
@@ -598,7 +598,7 @@ public class FriendsList extends UserList {
 								Client.field600 = var0; // L: 9307
 							} else if (var2 == 33) {
 								var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2988, Client.packetWriter.isaacCipher); // L: 9203
-								var8.packetBuffer.method7760(var1); // L: 9204
+								var8.packetBuffer.writeIntLE(var1); // L: 9204
 								var8.packetBuffer.writeIntME(var0); // L: 9205
 								var8.packetBuffer.method7929(var3); // L: 9206
 								Client.packetWriter.addNode(var8); // L: 9207
@@ -608,7 +608,7 @@ public class FriendsList extends UserList {
 							} else if (var2 == 34) {
 								var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2943, Client.packetWriter.isaacCipher); // L: 9221
 								var8.packetBuffer.method7929(var0); // L: 9222
-								var8.packetBuffer.method7784(var1); // L: 9223
+								var8.packetBuffer.readIntIME(var1); // L: 9223
 								var8.packetBuffer.method7863(var3); // L: 9224
 								Client.packetWriter.addNode(var8); // L: 9225
 								Client.field599 = 0; // L: 9226
@@ -617,7 +617,7 @@ public class FriendsList extends UserList {
 							} else if (var2 == 35) {
 								var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2998, Client.packetWriter.isaacCipher); // L: 9108
 								var8.packetBuffer.method7863(var3); // L: 9109
-								var8.packetBuffer.method7760(var1); // L: 9110
+								var8.packetBuffer.writeIntLE(var1); // L: 9110
 								var8.packetBuffer.writeIntME(var0); // L: 9111
 								Client.packetWriter.addNode(var8); // L: 9112
 								Client.field599 = 0; // L: 9113
@@ -627,7 +627,7 @@ public class FriendsList extends UserList {
 								var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2975, Client.packetWriter.isaacCipher); // L: 8816
 								var8.packetBuffer.writeShort(var3); // L: 8817
 								var8.packetBuffer.method7929(var0); // L: 8818
-								var8.packetBuffer.method7783(var1); // L: 8819
+								var8.packetBuffer.readIntME(var1); // L: 8819
 								Client.packetWriter.addNode(var8); // L: 8820
 								Client.field599 = 0; // L: 8821
 								class1.field4 = class140.getWidget(var1); // L: 8822
@@ -660,7 +660,7 @@ public class FriendsList extends UserList {
 
 								if (var2 == 39) {
 									var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2938, Client.packetWriter.isaacCipher); // L: 9035
-									var8.packetBuffer.method7760(var1); // L: 9036
+									var8.packetBuffer.writeIntLE(var1); // L: 9036
 									var8.packetBuffer.method7929(var0); // L: 9037
 									var8.packetBuffer.writeShort(var3); // L: 9038
 									Client.packetWriter.addNode(var8); // L: 9039
@@ -669,7 +669,7 @@ public class FriendsList extends UserList {
 									Client.field600 = var0; // L: 9042
 								} else if (var2 == 40) {
 									var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2978, Client.packetWriter.isaacCipher); // L: 9129
-									var8.packetBuffer.method7783(var1); // L: 9130
+									var8.packetBuffer.readIntME(var1); // L: 9130
 									var8.packetBuffer.method7863(var0); // L: 9131
 									var8.packetBuffer.writeIntME(var3); // L: 9132
 									Client.packetWriter.addNode(var8); // L: 9133
@@ -679,7 +679,7 @@ public class FriendsList extends UserList {
 								} else if (var2 == 41) {
 									var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2967, Client.packetWriter.isaacCipher); // L: 9355
 									var8.packetBuffer.method7863(var3); // L: 9356
-									var8.packetBuffer.method7784(var1); // L: 9357
+									var8.packetBuffer.readIntIME(var1); // L: 9357
 									var8.packetBuffer.writeShort(var0); // L: 9358
 									Client.packetWriter.addNode(var8); // L: 9359
 									Client.field599 = 0; // L: 9360
@@ -689,7 +689,7 @@ public class FriendsList extends UserList {
 									var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2977, Client.packetWriter.isaacCipher); // L: 8827
 									var8.packetBuffer.method7863(var0); // L: 8828
 									var8.packetBuffer.writeShort(var3); // L: 8829
-									var8.packetBuffer.method7783(var1); // L: 8830
+									var8.packetBuffer.readIntME(var1); // L: 8830
 									Client.packetWriter.addNode(var8); // L: 8831
 									Client.field599 = 0; // L: 8832
 									class1.field4 = class140.getWidget(var1); // L: 8833
@@ -697,7 +697,7 @@ public class FriendsList extends UserList {
 								} else if (var2 == 43) {
 									var8 = EnumComposition.getPacketBufferNode(ClientPacket.field2935, Client.packetWriter.isaacCipher); // L: 8961
 									var8.packetBuffer.method7929(var0); // L: 8962
-									var8.packetBuffer.method7783(var1); // L: 8963
+									var8.packetBuffer.readIntME(var1); // L: 8963
 									var8.packetBuffer.method7929(var3); // L: 8964
 									Client.packetWriter.addNode(var8); // L: 8965
 									Client.field599 = 0; // L: 8966
@@ -824,10 +824,10 @@ public class FriendsList extends UserList {
 													var9 = EnumComposition.getPacketBufferNode(ClientPacket.field2925, Client.packetWriter.isaacCipher); // L: 9158
 													var9.packetBuffer.method7929(Client.selectedSpellItemId); // L: 9159
 													var9.packetBuffer.method7863(Client.selectedSpellChildIndex); // L: 9160
-													var9.packetBuffer.method7760(NetCache.selectedSpellWidget); // L: 9161
+													var9.packetBuffer.writeIntLE(NetCache.selectedSpellWidget); // L: 9161
 													var9.packetBuffer.method7929(var16.itemId); // L: 9162
 													var9.packetBuffer.writeShort(var0); // L: 9163
-													var9.packetBuffer.method7783(var1); // L: 9164
+													var9.packetBuffer.readIntME(var1); // L: 9164
 													Client.packetWriter.addNode(var9); // L: 9165
 												}
 												break label654;

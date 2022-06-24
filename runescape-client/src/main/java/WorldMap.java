@@ -476,7 +476,7 @@ public class WorldMap {
 					PacketBufferNode var12 = EnumComposition.getPacketBufferNode(ClientPacket.field2966, Client.packetWriter.isaacCipher); // L: 230
 					var12.packetBuffer.method7763(var11); // L: 231
 					var12.packetBuffer.writeIntME(var10); // L: 232
-					var12.packetBuffer.method7760(0); // L: 233
+					var12.packetBuffer.writeIntLE(0); // L: 233
 					var12.packetBuffer.writeIntME(var14); // L: 234
 					Client.packetWriter.addNode(var12); // L: 235
 				} else {
@@ -491,7 +491,7 @@ public class WorldMap {
 
 					if (var9) { // L: 247
 						PacketBufferNode var13 = EnumComposition.getPacketBufferNode(ClientPacket.field2990, Client.packetWriter.isaacCipher); // L: 248
-						var13.packetBuffer.method7783(this.mouseCoord.packed()); // L: 249
+						var13.packetBuffer.readIntME(this.mouseCoord.packed()); // L: 249
 						Client.packetWriter.addNode(var13); // L: 250
 						this.field4534 = 0L; // L: 251
 					}

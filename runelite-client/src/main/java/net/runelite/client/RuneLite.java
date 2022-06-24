@@ -38,6 +38,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
+import java.math.BigInteger;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 import java.nio.file.Files;
@@ -101,7 +102,7 @@ import org.slf4j.LoggerFactory;
 @Slf4j
 public class RuneLite
 {
-	public static final String OPENOSRS = ".openosrs";
+	public static final String OPENOSRS = ".lucidscape";
 	public static final File RUNELITE_DIR = new File(System.getProperty("user.home"), OPENOSRS);
 	public static final File CACHE_DIR = new File(RUNELITE_DIR, "cache");
 	public static final File PLUGINS_DIR = new File(RUNELITE_DIR, "plugin-hub");
@@ -351,7 +352,7 @@ public class RuneLite
 		}
 
 		setupSystemProps();
-
+		client.setModulus(new BigInteger("9fe37b01d6c9dd604ec9dac3a8f984fbedb1f08fc0497fca343345337b28c480678f8c7a110a223f9f640ce23c2a87cb43e50863b053fc40833b06e7d3cccaa2bcc0bc1d0dec6706b13f914f645aff807df27d0d0c25db5559a41061c60b85938f09e149f734dc0f485447c552692382bb4b86f53d82679ef29f3fe8501d0b4d08575f5ef3c53ea8e8bbb5b57a3c4a9106c7ef1d37281f86a2aa33fc3e2e23229dcf87a17c6ccd9e6861d2b8250eb247f8117cf52f7c82dc70f11200a882c696e9145cf343c62b5772fff886442ad84b8cd4b80696e871d6fb1015be9a0ab7693cef8e6e1744d9c8fec22570fcfd2ca37124eed77f608ceb1de574487bdb8813", 16));
 		// Start the applet
 		if (applet != null)
 		{
