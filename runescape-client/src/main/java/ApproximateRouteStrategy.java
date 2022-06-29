@@ -43,7 +43,7 @@ public class ApproximateRouteStrategy extends RouteStrategy {
 			ClanChannelMember var3 = (ClanChannelMember)var2.members.get(var1); // L: 12251
 			if (var3.rank == -1) { // L: 12252
 				String var4 = var3.username.getName(); // L: 12253
-				PacketBufferNode var5 = EnumComposition.getPacketBufferNode(ClientPacket.field2914, Client.packetWriter.isaacCipher); // L: 12254
+				PacketBufferNode var5 = EnumComposition.getPacketBufferNode(ClientPacket.CLAN_CHANNEL_KICK, Client.packetWriter.isaacCipher); // L: 12254
 				var5.packetBuffer.writeByte(3 + ScriptEvent.stringCp1252NullTerminatedByteSize(var4)); // L: 12255
 				var5.packetBuffer.writeByte(var0); // L: 12256
 				var5.packetBuffer.writeShort(var1); // L: 12257

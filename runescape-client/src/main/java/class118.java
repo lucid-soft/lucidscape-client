@@ -134,7 +134,7 @@ public class class118 implements MouseWheel {
 				class446.Interpreter_intStackSize -= 2; // L: 3555
 				var7 = Interpreter.Interpreter_intStack[class446.Interpreter_intStackSize]; // L: 3556
 				var9 = Interpreter.Interpreter_intStack[class446.Interpreter_intStackSize + 1]; // L: 3557
-				var6 = EnumComposition.getPacketBufferNode(ClientPacket.field2949, Client.packetWriter.isaacCipher); // L: 3559
+				var6 = EnumComposition.getPacketBufferNode(ClientPacket.ABUSE_REPORT, Client.packetWriter.isaacCipher); // L: 3559
 				var6.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var8) + 2); // L: 3560
 				var6.packetBuffer.writeStringCp1252NullTerminated(var8); // L: 3561
 				var6.packetBuffer.writeByte(var7 - 1); // L: 3562
@@ -208,7 +208,7 @@ public class class118 implements MouseWheel {
 							Interpreter.Interpreter_stringStackSize -= 2; // L: 3624
 							var8 = Interpreter.Interpreter_stringStack[Interpreter.Interpreter_stringStackSize]; // L: 3625
 							String var11 = Interpreter.Interpreter_stringStack[Interpreter.Interpreter_stringStackSize + 1]; // L: 3626
-							var12 = EnumComposition.getPacketBufferNode(ClientPacket.field2932, Client.packetWriter.isaacCipher); // L: 3628
+							var12 = EnumComposition.getPacketBufferNode(ClientPacket.SEND_PRIVATE_CHAT, Client.packetWriter.isaacCipher); // L: 3628
 							var12.packetBuffer.writeShort(0); // L: 3629
 							int var10 = var12.packetBuffer.offset; // L: 3630
 							var12.packetBuffer.writeStringCp1252NullTerminated(var8); // L: 3631

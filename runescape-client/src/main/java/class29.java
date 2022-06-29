@@ -307,7 +307,7 @@ public class class29 {
 												PacketBufferNode var23 = EnumComposition.getPacketBufferNode(ClientPacket.field3012, Client.packetWriter.isaacCipher); // L: 11262
 												var23.packetBuffer.readIntME(var22[0]); // L: 11263
 												var23.packetBuffer.writeInt(var9.method5709()); // L: 11264
-												var23.packetBuffer.method7929(var9.childIndex); // L: 11265
+												var23.packetBuffer.writeUnsignedShortAddLE(var9.childIndex); // L: 11265
 												var23.packetBuffer.writeInt(var22[1]); // L: 11266
 												var23.packetBuffer.readIntME(var22[2]); // L: 11267
 												var23.packetBuffer.readIntIME(var9.id); // L: 11268

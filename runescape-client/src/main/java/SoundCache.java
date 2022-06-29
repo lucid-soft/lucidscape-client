@@ -224,7 +224,7 @@ public class SoundCache {
 
 			if ((var4 & 1024) != 0) { // L: 8075
 				var3.field1189 = Client.cycle + var0.readShortAdd(); // L: 8076
-				var3.field1135 = Client.cycle + var0.method7774(); // L: 8077
+				var3.field1135 = Client.cycle + var0.readShortLE(); // L: 8077
 				var3.field1191 = var0.readByte(); // L: 8078
 				var3.field1192 = var0.readUnsignedByteNeg(); // L: 8079
 				var3.field1193 = var0.readUnsignedByteSub(); // L: 8080
@@ -234,7 +234,7 @@ public class SoundCache {
 			int var6;
 			int var7;
 			if ((var4 & 16) != 0) { // L: 8083
-				var5 = var0.method7774(); // L: 8084
+				var5 = var0.readShortLE(); // L: 8084
 				if (var5 == 65535) { // L: 8085
 					var5 = -1; // L: 8086
 				}
@@ -328,7 +328,7 @@ public class SoundCache {
 			}
 
 			if ((var4 & 2048) != 0) { // L: 8162
-				var3.field1204 = var0.method7787(); // L: 8163
+				var3.field1204 = var0.readIntME(); // L: 8163
 			}
 
 			if ((var4 & 8) != 0) { // L: 8165

@@ -16,7 +16,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3037;
+	public static final ServerPacket IF_SETEVENTS;
 	@ObfuscatedName("q")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -196,7 +196,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3042;
+	public static final ServerPacket UPDATE_INV_PARTIAL;
 	@ObfuscatedName("ax")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -271,7 +271,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3088;
+	public static final ServerPacket IF_SETTEXT;
 	@ObfuscatedName("bz")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -346,7 +346,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3099;
+	public static final ServerPacket UPDATE_INV_FULL;
 	@ObfuscatedName("ba")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -547,7 +547,7 @@ public class ServerPacket {
 
 	static {
 		RUN_CLIENTSCRIPT = new ServerPacket(0, -2); // L: 5
-		field3037 = new ServerPacket(1, 12); // L: 6
+		IF_SETEVENTS = new ServerPacket(1, 12); // L: 6
 		field3038 = new ServerPacket(2, 3); // L: 7
 		field3118 = new ServerPacket(3, 15); // L: 8
 		field3040 = new ServerPacket(4, 5); // L: 9
@@ -583,7 +583,7 @@ public class ServerPacket {
 		field3070 = new ServerPacket(34, 2); // L: 39
 		field3071 = new ServerPacket(35, 1); // L: 40
 		field3129 = new ServerPacket(36, 4); // L: 41
-		field3042 = new ServerPacket(37, -2); // L: 42
+		UPDATE_INV_PARTIAL = new ServerPacket(37, -2); // L: 42
 		MESSAGE_GAME = new ServerPacket(38, -1); // L: 43
 		field3075 = new ServerPacket(39, 1); // L: 44
 		field3076 = new ServerPacket(40, 0); // L: 45
@@ -598,7 +598,7 @@ public class ServerPacket {
 		IF_OPEN_SUB = new ServerPacket(49, 7); // L: 54
 		field3086 = new ServerPacket(50, -1); // L: 55
 		field3087 = new ServerPacket(51, 8); // L: 56
-		field3088 = new ServerPacket(52, -2); // L: 57
+		IF_SETTEXT = new ServerPacket(52, -2); // L: 57
 		field3060 = new ServerPacket(53, 10); // L: 58
 		PLAYER_INFO = new ServerPacket(54, -2); // L: 59
 		UPDATE_STAT = new ServerPacket(55, 6); // L: 60
@@ -613,7 +613,7 @@ public class ServerPacket {
 		field3100 = new ServerPacket(64, 6); // L: 69
 		field3101 = new ServerPacket(65, 2); // L: 70
 		field3064 = new ServerPacket(66, -2); // L: 71
-		field3099 = new ServerPacket(67, -2); // L: 72
+		UPDATE_INV_FULL = new ServerPacket(67, -2); // L: 72
 		field3104 = new ServerPacket(68, 6); // L: 73
 		field3105 = new ServerPacket(69, -2); // L: 74
 		field3047 = new ServerPacket(70, 6); // L: 75

@@ -95,7 +95,7 @@ public class ArchiveLoader {
 	@Export("clanKickUser")
 	static final void clanKickUser(String var0) {
 		if (Huffman.friendsChat != null) { // L: 12225
-			PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.field2923, Client.packetWriter.isaacCipher); // L: 12226
+			PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.CLAN_KICK_USER, Client.packetWriter.isaacCipher); // L: 12226
 			var1.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var0)); // L: 12227
 			var1.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 12228
 			Client.packetWriter.addNode(var1); // L: 12229

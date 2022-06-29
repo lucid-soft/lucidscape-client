@@ -345,7 +345,7 @@ public class class115 {
 					return 1; // L: 1513
 				} else if (var0 == ScriptOpcodes.RESUME_STRINGDIALOG) {
 					var7 = Interpreter.Interpreter_stringStack[--Interpreter.Interpreter_stringStackSize]; // L: 1516
-					var11 = EnumComposition.getPacketBufferNode(ClientPacket.field2985, Client.packetWriter.isaacCipher); // L: 1518
+					var11 = EnumComposition.getPacketBufferNode(ClientPacket.RESUME_PSTRING_DIALOG, Client.packetWriter.isaacCipher); // L: 1518
 					var11.packetBuffer.writeByte(var7.length() + 1); // L: 1519
 					var11.packetBuffer.writeStringCp1252NullTerminated(var7); // L: 1520
 					Client.packetWriter.addNode(var11); // L: 1521
@@ -406,7 +406,7 @@ public class class115 {
 							PacketBufferNode var6 = EnumComposition.getPacketBufferNode(ClientPacket.field2951, Client.packetWriter.isaacCipher); // L: 1580
 							var6.packetBuffer.writeShort(1 + ScriptEvent.stringCp1252NullTerminatedByteSize(var4) + ScriptEvent.stringCp1252NullTerminatedByteSize(var5)); // L: 1581
 							var6.packetBuffer.writeStringCp1252NullTerminated(var5); // L: 1582
-							var6.packetBuffer.method7762(var10); // L: 1583
+							var6.packetBuffer.writeByteAdd(var10); // L: 1583
 							var6.packetBuffer.writeStringCp1252NullTerminated(var4); // L: 1584
 							Client.packetWriter.addNode(var6); // L: 1585
 							return 1; // L: 1586
@@ -724,7 +724,7 @@ public class class115 {
 			}
 		}
 
-		PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.field3013, Client.packetWriter.isaacCipher); // L: 3936
+		PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.CLIENT_CHEAT, Client.packetWriter.isaacCipher); // L: 3936
 		var1.packetBuffer.writeByte(var0.length() + 1); // L: 3937
 		var1.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 3938
 		Client.packetWriter.addNode(var1); // L: 3939

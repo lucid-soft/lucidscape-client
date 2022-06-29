@@ -80,11 +80,11 @@ public class MenuAction {
 					int var10 = var5 * var8 - var4 * var7 >> 11; // L: 3869
 					int var11 = var9 + class101.localPlayer.x >> 7; // L: 3870
 					int var12 = class101.localPlayer.y - var10 >> 7; // L: 3871
-					PacketBufferNode var13 = EnumComposition.getPacketBufferNode(ClientPacket.field2913, Client.packetWriter.isaacCipher); // L: 3873
+					PacketBufferNode var13 = EnumComposition.getPacketBufferNode(ClientPacket.MOVE_MINIMAP_CLICK, Client.packetWriter.isaacCipher); // L: 3873
 					var13.packetBuffer.writeByte(18); // L: 3874
 					var13.packetBuffer.writeByte(KeyHandler.KeyHandler_pressedKeys[82] ? (KeyHandler.KeyHandler_pressedKeys[81] ? 2 : 1) : 0); // L: 3875
 					var13.packetBuffer.writeShort(var11 + class28.baseX); // L: 3876
-					var13.packetBuffer.writeIntME(var12 + WorldMapLabelSize.baseY); // L: 3877
+					var13.packetBuffer.writeShortLE(var12 + WorldMapLabelSize.baseY); // L: 3877
 					var13.packetBuffer.writeByte(var4); // L: 3878
 					var13.packetBuffer.writeByte(var5); // L: 3879
 					var13.packetBuffer.writeShort(Client.camAngleY); // L: 3880

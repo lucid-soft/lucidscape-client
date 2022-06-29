@@ -172,7 +172,7 @@ public class Script extends DualNode {
 		if (Client.packetWriter.pendingWrites >= 50 || var0) { // L: 5710
 			Client.packetWriter.pendingWrites = 0; // L: 5711
 			if (!Client.hadNetworkError && Client.packetWriter.getSocket() != null) { // L: 5712
-				PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.field2969, Client.packetWriter.isaacCipher); // L: 5714
+				PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.NO_TIMEOUT, Client.packetWriter.isaacCipher); // L: 5714
 				Client.packetWriter.addNode(var1); // L: 5715
 
 				try {

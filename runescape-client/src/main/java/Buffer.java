@@ -865,7 +865,7 @@ public class Buffer extends Node {
 		descriptor = "(II)V",
 		garbageValue = "619719503"
 	)
-	public void method7762(int var1) {
+	public void writeByteAdd(int var1) {
 		this.array[++this.offset - 1] = (byte)(var1 + 128); // L: 543
 	} // L: 544
 
@@ -874,7 +874,7 @@ public class Buffer extends Node {
 		descriptor = "(II)V",
 		garbageValue = "-473301254"
 	)
-	public void method7763(int var1) {
+	public void writeByteNeg(int var1) {
 		this.array[++this.offset - 1] = (byte)(0 - var1); // L: 547
 	} // L: 548
 
@@ -947,7 +947,7 @@ public class Buffer extends Node {
 		garbageValue = "9"
 	)
 	@Export("writeIntME")
-	public void writeIntME(int var1) {
+	public void writeShortLE(int var1) {
 		this.array[++this.offset - 1] = (byte)var1; // L: 579
 		this.array[++this.offset - 1] = (byte)(var1 >> 8); // L: 580
 	} // L: 581
@@ -967,7 +967,7 @@ public class Buffer extends Node {
 		descriptor = "(IB)V",
 		garbageValue = "28"
 	)
-	public void method7929(int var1) {
+	public void writeUnsignedShortAddLE(int var1) {
 		this.array[++this.offset - 1] = (byte)(var1 + 128); // L: 589
 		this.array[++this.offset - 1] = (byte)(var1 >> 8); // L: 590
 	} // L: 591
@@ -977,7 +977,7 @@ public class Buffer extends Node {
 		descriptor = "(I)I",
 		garbageValue = "-62610324"
 	)
-	public int method7774() {
+	public int readShortLE() {
 		this.offset += 2; // L: 594
 		return ((this.array[this.offset - 1] & 255) << 8) + (this.array[this.offset - 2] & 255); // L: 595
 	}
@@ -1118,7 +1118,7 @@ public class Buffer extends Node {
 		descriptor = "(I)I",
 		garbageValue = "2015577981"
 	)
-	public int method7786() {
+	public int readIntIME() {
 		this.offset += 4; // L: 666
 		return ((this.array[this.offset - 2] & 255) << 24) + ((this.array[this.offset - 4] & 255) << 8) + (this.array[this.offset - 3] & 255) + ((this.array[this.offset - 1] & 255) << 16); // L: 667
 	}
@@ -1128,7 +1128,7 @@ public class Buffer extends Node {
 		descriptor = "(I)I",
 		garbageValue = "-1155925608"
 	)
-	public int method7787() {
+	public int readIntME() {
 		this.offset += 4; // L: 671
 		return ((this.array[this.offset - 1] & 255) << 8) + ((this.array[this.offset - 4] & 255) << 16) + (this.array[this.offset - 2] & 255) + ((this.array[this.offset - 3] & 255) << 24); // L: 672
 	}

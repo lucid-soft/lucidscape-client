@@ -68,7 +68,7 @@ public final class class362 implements Comparable {
 	@Export("resumePauseWidget")
 	static void resumePauseWidget(int var0, int var1) {
 		PacketBufferNode var2 = EnumComposition.getPacketBufferNode(ClientPacket.field2995, Client.packetWriter.isaacCipher); // L: 9588
-		var2.packetBuffer.writeIntME(var1); // L: 9589
+		var2.packetBuffer.writeShortLE(var1); // L: 9589
 		var2.packetBuffer.readIntME(var0); // L: 9590
 		Client.packetWriter.addNode(var2); // L: 9591
 	} // L: 9592

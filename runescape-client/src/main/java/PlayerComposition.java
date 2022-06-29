@@ -480,7 +480,7 @@ public class PlayerComposition {
 		garbageValue = "-1658860348"
 	)
 	public static PacketBufferNode method5600(int var0, String var1, Language var2, int var3) {
-		PacketBufferNode var4 = EnumComposition.getPacketBufferNode(ClientPacket.field2973, Client.packetWriter.isaacCipher); // L: 17
+		PacketBufferNode var4 = EnumComposition.getPacketBufferNode(ClientPacket.CHAT_MESSAGE, Client.packetWriter.isaacCipher); // L: 17
 		var4.packetBuffer.writeByte(0); // L: 18
 		int var5 = var4.packetBuffer.offset; // L: 19
 		var4.packetBuffer.writeByte(var0); // L: 20

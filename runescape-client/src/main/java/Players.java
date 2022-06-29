@@ -156,7 +156,7 @@ public class Players {
 	@Export("Clan_joinChat")
 	static final void Clan_joinChat(String var0) {
 		if (!var0.equals("")) { // L: 12233
-			PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.field2942, Client.packetWriter.isaacCipher); // L: 12235
+			PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.LEAVE_CLAN_CHAT, Client.packetWriter.isaacCipher); // L: 12235
 			var1.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var0)); // L: 12236
 			var1.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 12237
 			Client.packetWriter.addNode(var1); // L: 12238

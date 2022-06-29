@@ -331,7 +331,7 @@ public class ArchiveDiskActionHandler implements Runnable {
 				HealthBarUpdate.updateGameState(30); // L: 5912
 				Renderable.playPcmPlayers(); // L: 5913
 				class361.method6552(); // L: 5914
-				var17 = EnumComposition.getPacketBufferNode(ClientPacket.field2989, Client.packetWriter.isaacCipher); // L: 5915
+				var17 = EnumComposition.getPacketBufferNode(ClientPacket.MAP_BUILD_COMPLETE, Client.packetWriter.isaacCipher); // L: 5915
 				Client.packetWriter.addNode(var17); // L: 5916
 				Calendar.method5504(); // L: 5917
 			}

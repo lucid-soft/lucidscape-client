@@ -189,7 +189,7 @@ public class FriendSystem {
 					var4 = var10000.append(" from your ignore list first").toString();
 					class290.addGameMessage(30, "", var4); // L: 120
 				} else {
-					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.field2964, Client.packetWriter.isaacCipher); // L: 127
+					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.ADD_FRIEND, Client.packetWriter.isaacCipher); // L: 127
 					var3.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var1)); // L: 128
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 129
 					Client.packetWriter.addNode(var3); // L: 130
@@ -272,7 +272,7 @@ public class FriendSystem {
 			if (var2.hasCleanName()) { // L: 211
 				if (this.friendsList.removeByUsername(var2)) { // L: 212
 					Client.field689 = Client.cycleCntr; // L: 214
-					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.field2958, Client.packetWriter.isaacCipher); // L: 217
+					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.REMOVE_FRIEND, Client.packetWriter.isaacCipher); // L: 217
 					var3.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var1)); // L: 218
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 219
 					Client.packetWriter.addNode(var3); // L: 220
@@ -310,7 +310,7 @@ public class FriendSystem {
 			if (var2.hasCleanName()) { // L: 244
 				if (this.ignoreList.removeByUsername(var2)) { // L: 245
 					Client.field689 = Client.cycleCntr; // L: 247
-					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.field2921, Client.packetWriter.isaacCipher); // L: 250
+					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.REMOVE_IGNORE, Client.packetWriter.isaacCipher); // L: 250
 					var3.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var1)); // L: 251
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 252
 					Client.packetWriter.addNode(var3); // L: 253

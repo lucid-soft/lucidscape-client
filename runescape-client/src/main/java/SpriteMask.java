@@ -127,7 +127,7 @@ public class SpriteMask extends DualNode {
 		garbageValue = "-1187838679"
 	)
 	static void method5522() {
-		PacketBufferNode var0 = EnumComposition.getPacketBufferNode(ClientPacket.field3008, Client.packetWriter.isaacCipher); // L: 4385
+		PacketBufferNode var0 = EnumComposition.getPacketBufferNode(ClientPacket.WINDOW_STATUS_EVENT, Client.packetWriter.isaacCipher); // L: 4385
 		var0.packetBuffer.writeByte(class9.getWindowedMode()); // L: 4386
 		var0.packetBuffer.writeShort(Script.canvasWidth); // L: 4387
 		var0.packetBuffer.writeShort(class78.canvasHeight); // L: 4388

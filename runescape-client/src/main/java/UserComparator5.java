@@ -167,7 +167,7 @@ public class UserComparator5 extends AbstractUserComparator {
 	)
 	@Export("Clan_leaveChat")
 	static final void Clan_leaveChat() {
-		PacketBufferNode var0 = EnumComposition.getPacketBufferNode(ClientPacket.field2942, Client.packetWriter.isaacCipher); // L: 12243
+		PacketBufferNode var0 = EnumComposition.getPacketBufferNode(ClientPacket.LEAVE_CLAN_CHAT, Client.packetWriter.isaacCipher); // L: 12243
 		var0.packetBuffer.writeByte(0); // L: 12244
 		Client.packetWriter.addNode(var0); // L: 12245
 	} // L: 12246

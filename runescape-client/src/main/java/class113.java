@@ -57,7 +57,7 @@ public class class113 {
 		garbageValue = "1059822722"
 	)
 	static final void method2632(String var0) {
-		PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.field2944, Client.packetWriter.isaacCipher); // L: 195
+		PacketBufferNode var1 = EnumComposition.getPacketBufferNode(ClientPacket.ADD_IGNORE, Client.packetWriter.isaacCipher); // L: 195
 		var1.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var0)); // L: 196
 		var1.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 197
 		Client.packetWriter.addNode(var1); // L: 198

@@ -49,9 +49,9 @@ public class DevicePcmPlayerProvider implements class47 {
 		garbageValue = "-1946812407"
 	)
 	static final void method309(String var0, int var1) {
-		PacketBufferNode var2 = EnumComposition.getPacketBufferNode(ClientPacket.field2971, Client.packetWriter.isaacCipher); // L: 260
+		PacketBufferNode var2 = EnumComposition.getPacketBufferNode(ClientPacket.SET_FRIEND_RANK, Client.packetWriter.isaacCipher); // L: 260
 		var2.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var0) + 1); // L: 261
-		var2.packetBuffer.method7762(var1); // L: 262
+		var2.packetBuffer.writeByteAdd(var1); // L: 262
 		var2.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 263
 		Client.packetWriter.addNode(var2); // L: 264
 	} // L: 265

@@ -135,8 +135,8 @@ public final class WorldMapSprite {
 						var2 = var1.readUnsignedByte(); // L: 7569
 						var3 = (var2 >> 4 & 7) + class10.field53; // L: 7570
 						var4 = (var2 & 7) + class298.field3558; // L: 7571
-						var5 = var1.method7774(); // L: 7572
-						var6 = var1.method7774(); // L: 7573
+						var5 = var1.readShortLE(); // L: 7572
+						var6 = var1.readShortLE(); // L: 7573
 						var7 = var1.readUnsignedShort(); // L: 7574
 						if (var3 >= 0 && var4 >= 0 && var3 < 104 && var4 < 104) { // L: 7575
 							NodeDeque var34 = Client.groundItems[PacketWriter.Client_plane][var3][var4]; // L: 7576
@@ -251,7 +251,7 @@ public final class WorldMapSprite {
 								var3 = var2 >> 2; // L: 7674
 								var4 = var2 & 3; // L: 7675
 								var5 = Client.field582[var3]; // L: 7676
-								var6 = var1.method7774(); // L: 7677
+								var6 = var1.readShortLE(); // L: 7677
 								var7 = var1.readUnsignedByte(); // L: 7678
 								var8 = (var7 >> 4 & 7) + class10.field53; // L: 7679
 								var9 = (var7 & 7) + class298.field3558; // L: 7680
@@ -315,7 +315,7 @@ public final class WorldMapSprite {
 								var6 = var1.readByteAdd(); // L: 7723
 								var7 = (var6 >> 4 & 7) + class10.field53; // L: 7724
 								var8 = (var6 & 7) + class298.field3558; // L: 7725
-								var9 = var1.method7774(); // L: 7726
+								var9 = var1.readShortLE(); // L: 7726
 								if (var7 >= 0 && var8 >= 0 && var7 < 104 && var8 < 104) { // L: 7727
 									Canvas.updatePendingSpawn(PacketWriter.Client_plane, var7, var8, var5, var9, var3, var4, 0, -1); // L: 7728
 								}

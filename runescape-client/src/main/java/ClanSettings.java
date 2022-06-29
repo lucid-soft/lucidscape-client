@@ -1119,7 +1119,7 @@ public class ClanSettings {
 								var5.field1182 = var0.readByte(); // L: 266
 								var5.field1181 = var0.readUnsignedByteSub(); // L: 267
 								var5.field1183 = var0.readUnsignedByteAdd(); // L: 268
-								var5.field1184 = var0.method7774() + Client.cycle; // L: 269
+								var5.field1184 = var0.readShortLE() + Client.cycle; // L: 269
 								var5.field1194 = var0.readShortAddLE() + Client.cycle; // L: 270
 								var5.field1186 = var0.readUnsignedShort(); // L: 271
 								if (var5.field1088) { // L: 272
@@ -1139,7 +1139,7 @@ public class ClanSettings {
 								var5.field1203 = 0; // L: 286
 							}
 
-							// face direction
+							// direction
 							if ((var6 & 8) != 0) { // L: 288
 								var5.field1165 = var0.readShortAdd(); // L: 289
 								if (var5.pathLength == 0) { // L: 290
@@ -1148,7 +1148,7 @@ public class ClanSettings {
 								}
 							}
 
-							// temporary movement
+							// perm movement
 							if ((var6 & 256) != 0) { // L: 295
 								class192[] var16 = Players.field1304; // L: 296
 								class192[] var18 = new class192[]{class192.field2212, class192.field2208, class192.field2209, class192.field2211}; // L: 300
@@ -1229,7 +1229,7 @@ public class ClanSettings {
 
 							// face entity
 							if ((var6 & 64) != 0) { // L: 362
-								var5.targetIndex = var0.method7774(); // L: 363
+								var5.targetIndex = var0.readShortLE(); // L: 363
 								if (var5.targetIndex == 65535) { // L: 364
 									var5.targetIndex = -1;
 								}
@@ -1237,7 +1237,7 @@ public class ClanSettings {
 
 							// tint player
 							if ((var6 & 512) != 0) { // L: 366
-								var5.field1189 = Client.cycle + var0.method7774(); // L: 367
+								var5.field1189 = Client.cycle + var0.readShortLE(); // L: 367
 								var5.field1135 = Client.cycle + var0.readShortAddLE(); // L: 368
 								var5.field1191 = var0.readUnsignedByteNeg(); // L: 369
 								var5.field1192 = var0.readUnsignedByteSub(); // L: 370
@@ -1245,7 +1245,7 @@ public class ClanSettings {
 								var5.field1133 = (byte)var0.readUnsignedByte(); // L: 372
 							}
 
-							// perm movement
+							// temporary movement
 							if ((var6 & 16384) != 0) { // L: 374
 								var7 = var0.readUnsignedByteSub(); // L: 375
 							}
