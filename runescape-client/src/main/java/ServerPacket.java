@@ -121,7 +121,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3058;
+	public static final ServerPacket NPC_INFO_SMALL;
 	@ObfuscatedName("o")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -131,7 +131,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3079;
+	public static final ServerPacket REBOOT_TIMER;
 	@ObfuscatedName("d")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -151,7 +151,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3044;
+	public static final ServerPacket RESET_ANIMS;
 	@ObfuscatedName("ao")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -171,7 +171,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3068;
+	public static final ServerPacket CAM_RESET;
 	@ObfuscatedName("ae")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -306,7 +306,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
 	)
-	public static final ServerPacket field3095;
+	public static final ServerPacket IF_SETHIDE;
 	@ObfuscatedName("bc")
 	@ObfuscatedSignature(
 		descriptor = "Ljn;"
@@ -568,17 +568,17 @@ public class ServerPacket {
 		field3055 = new ServerPacket(19, 0); // L: 24
 		field3056 = new ServerPacket(20, -2); // L: 25
 		field3057 = new ServerPacket(21, 5); // L: 26
-		field3058 = new ServerPacket(22, -2); // L: 27
+		NPC_INFO_SMALL = new ServerPacket(22, -2); // L: 27
 		field3097 = new ServerPacket(23, -2); // L: 28
-		field3079 = new ServerPacket(24, 2); // L: 29
+		REBOOT_TIMER = new ServerPacket(24, 2); // L: 29
 		MINIMAP_FLAG_SET = new ServerPacket(25, 2); // L: 30
 		field3051 = new ServerPacket(26, 2); // L: 31
 		field3063 = new ServerPacket(27, 5); // L: 32
-		field3044 = new ServerPacket(28, 0); // L: 33
+		RESET_ANIMS = new ServerPacket(28, 0); // L: 33
 		field3059 = new ServerPacket(29, 5); // L: 34
 		field3066 = new ServerPacket(30, -2); // L: 35
 		field3092 = new ServerPacket(31, 28); // L: 36
-		field3068 = new ServerPacket(32, 0); // L: 37
+		CAM_RESET = new ServerPacket(32, 0); // L: 37
 		field3119 = new ServerPacket(33, 8); // L: 38
 		field3070 = new ServerPacket(34, 2); // L: 39
 		field3071 = new ServerPacket(35, 1); // L: 40
@@ -605,7 +605,7 @@ public class ServerPacket {
 		field3096 = new ServerPacket(56, 1); // L: 61
 		field3140 = new ServerPacket(57, 4); // L: 62
 		field3094 = new ServerPacket(58, 20); // L: 63
-		field3095 = new ServerPacket(59, 5); // L: 64
+		IF_SETHIDE = new ServerPacket(59, 5); // L: 64
 		field3045 = new ServerPacket(60, -1); // L: 65
 		field3043 = new ServerPacket(61, 6); // L: 66
 		field3062 = new ServerPacket(62, -2); // L: 67

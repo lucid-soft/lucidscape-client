@@ -82,7 +82,7 @@ final class GrandExchangeOfferUnitPriceComparator implements Comparator {
 		int var2;
 		if (var1 < Client.npcCount) { // L: 8012
 			for (var2 = var1; var2 < Client.npcCount; ++var2) { // L: 8013
-				Client.field616[++Client.field615 - 1] = Client.npcIndices[var2];
+				Client.npcIndexesToRemove[++Client.npcsToRemoveCount - 1] = Client.npcIndices[var2];
 			}
 		}
 
@@ -103,7 +103,7 @@ final class GrandExchangeOfferUnitPriceComparator implements Comparator {
 					if (var6 == 0) { // L: 8027
 						Client.npcIndices[++Client.npcCount - 1] = var3; // L: 8028
 						var4.npcCycle = Client.cycle; // L: 8029
-						Client.field539[++Client.field538 - 1] = var3; // L: 8030
+						Client.extendedInfoNpcIndexes[++Client.extendedInfoNpcCount - 1] = var3; // L: 8030
 					} else {
 						int var7;
 						int var8;
@@ -114,7 +114,7 @@ final class GrandExchangeOfferUnitPriceComparator implements Comparator {
 							var4.method2361(var7, class192.field2212); // L: 8037
 							var8 = var0.readBits(1); // L: 8038
 							if (var8 == 1) { // L: 8039
-								Client.field539[++Client.field538 - 1] = var3;
+								Client.extendedInfoNpcIndexes[++Client.extendedInfoNpcCount - 1] = var3;
 							}
 						} else if (var6 == 2) { // L: 8042
 							Client.npcIndices[++Client.npcCount - 1] = var3; // L: 8043
@@ -131,10 +131,10 @@ final class GrandExchangeOfferUnitPriceComparator implements Comparator {
 
 							var7 = var0.readBits(1); // L: 8055
 							if (var7 == 1) { // L: 8056
-								Client.field539[++Client.field538 - 1] = var3;
+								Client.extendedInfoNpcIndexes[++Client.extendedInfoNpcCount - 1] = var3;
 							}
 						} else if (var6 == 3) { // L: 8059
-							Client.field616[++Client.field615 - 1] = var3; // L: 8060
+							Client.npcIndexesToRemove[++Client.npcsToRemoveCount - 1] = var3; // L: 8060
 						}
 					}
 				}

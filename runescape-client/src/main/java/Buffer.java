@@ -957,7 +957,7 @@ public class Buffer extends Node {
 		descriptor = "(IB)V",
 		garbageValue = "-13"
 	)
-	public void method7863(int var1) {
+	public void writeUnsignedShortAdd(int var1) {
 		this.array[++this.offset - 1] = (byte)(var1 >> 8); // L: 584
 		this.array[++this.offset - 1] = (byte)(var1 + 128); // L: 585
 	} // L: 586

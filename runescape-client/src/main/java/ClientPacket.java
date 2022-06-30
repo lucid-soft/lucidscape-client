@@ -61,7 +61,7 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2915;
+	public static final ClientPacket OP_HELD3;
 	@ObfuscatedName("t")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -111,12 +111,12 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2925;
+	public static final ClientPacket ITEM_ON_ITEM;
 	@ObfuscatedName("b")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2954;
+	public static final ClientPacket OP_HELD4;
 	@ObfuscatedName("n")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -166,12 +166,12 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2936;
+	public static final ClientPacket OPLOC4;
 	@ObfuscatedName("ac")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2937;
+	public static final ClientPacket OPLOC5;
 	@ObfuscatedName("ae")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -216,7 +216,7 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket OP_HELD1;
+	public static final ClientPacket OP_HELD2;
 	@ObfuscatedName("aq")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -246,7 +246,7 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2952;
+	public static final ClientPacket EXAMINE_ITEM;
 	@ObfuscatedName("au")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -271,12 +271,12 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field3003;
+	public static final ClientPacket OPLOC2;
 	@ObfuscatedName("bz")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field3009;
+	public static final ClientPacket OPLOC3;
 	@ObfuscatedName("bp")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -301,7 +301,7 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2963;
+	public static final ClientPacket OP_HELD5;
 	@ObfuscatedName("bq")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -366,7 +366,7 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2976;
+	public static final ClientPacket EXAMINE_OBJECT;
 	@ObfuscatedName("bo")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -401,7 +401,7 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2983;
+	public static final ClientPacket OPHELD1;
 	@ObfuscatedName("cq")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -446,7 +446,7 @@ public class ClientPacket implements class260 {
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
 	)
-	public static final ClientPacket field2992;
+	public static final ClientPacket ITEM_ON_OBJ;
 	@ObfuscatedName("cf")
 	@ObfuscatedSignature(
 		descriptor = "Lju;"
@@ -571,7 +571,7 @@ public class ClientPacket implements class260 {
 		field2912 = new ClientPacket(7, 16); // L: 12
 		CHAT_MESSAGE = new ClientPacket(8, -1); // L: 13
 		CLAN_CHANNEL_KICK = new ClientPacket(9, -1); // L: 14
-		field2915 = new ClientPacket(10, 8); // L: 15
+		OP_HELD3 = new ClientPacket(10, 8); // L: 15
 		field2916 = new ClientPacket(11, 3); // L: 16
 		EVENT_KEYBOARD = new ClientPacket(12, -2); // L: 17
 		LOGIN_TIMINGS = new ClientPacket(13, -1); // L: 18
@@ -581,8 +581,8 @@ public class ClientPacket implements class260 {
 		field2922 = new ClientPacket(17, 2); // L: 22
 		CLAN_KICK_USER = new ClientPacket(18, -1); // L: 23
 		field2905 = new ClientPacket(19, 8); // L: 24
-		field2925 = new ClientPacket(20, 16); // L: 25
-		field2954 = new ClientPacket(21, 8); // L: 26
+		ITEM_ON_ITEM = new ClientPacket(20, 16); // L: 25
+		OP_HELD4 = new ClientPacket(21, 8); // L: 26
 		field2920 = new ClientPacket(22, 7); // L: 27
 		field2928 = new ClientPacket(23, -1); // L: 28
 		field2908 = new ClientPacket(24, 11); // L: 29
@@ -592,8 +592,8 @@ public class ClientPacket implements class260 {
 		field2933 = new ClientPacket(28, 14); // L: 33
 		field2943 = new ClientPacket(29, 8); // L: 34
 		field2935 = new ClientPacket(30, 8); // L: 35
-		field2936 = new ClientPacket(31, 7); // L: 36
-		field2937 = new ClientPacket(32, 7); // L: 37
+		OPLOC4 = new ClientPacket(31, 7); // L: 36
+		OPLOC5 = new ClientPacket(32, 7); // L: 37
 		field2938 = new ClientPacket(33, 8); // L: 38
 		field2939 = new ClientPacket(34, 3); // L: 39
 		field2940 = new ClientPacket(35, 3); // L: 40
@@ -602,24 +602,24 @@ public class ClientPacket implements class260 {
 		OPLOC1 = new ClientPacket(38, 7);
 		ADD_IGNORE = new ClientPacket(39, -1);
 		field2945 = new ClientPacket(40, 0);
-		OP_HELD1 = new ClientPacket(41, 8);
+		OP_HELD2 = new ClientPacket(41, 8);
 		field2947 = new ClientPacket(42, 3);
 		UNUSED_PACKET_43 = new ClientPacket(43, -1); // L: 48
 		ABUSE_REPORT = new ClientPacket(44, -1); // L: 49
 		field2997 = new ClientPacket(45, 15); // L: 50
 		field2951 = new ClientPacket(46, -2);
-		field2952 = new ClientPacket(47, 8);
+		EXAMINE_ITEM = new ClientPacket(47, 8);
 		field2953 = new ClientPacket(48, 3);
 		field2993 = new ClientPacket(49, 16); // L: 54
 		field2955 = new ClientPacket(50, 7);
 		field2956 = new ClientPacket(51, 0);
-		field3003 = new ClientPacket(52, 7);
-		field3009 = new ClientPacket(53, 7); // L: 58
+		OPLOC2 = new ClientPacket(52, 7);
+		OPLOC3 = new ClientPacket(53, 7); // L: 58
 		field2959 = new ClientPacket(54, 3); // L: 59
 		field2966 = new ClientPacket(55, 9); // L: 60
 		field2975 = new ClientPacket(56, 8); // L: 61
 		field2968 = new ClientPacket(57, 8); // L: 62
-		field2963 = new ClientPacket(58, 8); // L: 63
+		OP_HELD5 = new ClientPacket(58, 8); // L: 63
 		ADD_FRIEND = new ClientPacket(59, -1); // L: 64
 		field2946 = new ClientPacket(60, 4); // L: 65
 		field2907 = new ClientPacket(61, 3); // L: 66
@@ -632,14 +632,14 @@ public class ClientPacket implements class260 {
 		field2948 = new ClientPacket(68, 3); // L: 73
 		field2974 = new ClientPacket(69, 8); // L: 74
 		field2995 = new ClientPacket(70, 6); // L: 75
-		field2976 = new ClientPacket(71, 2); // L: 76
+		EXAMINE_OBJECT = new ClientPacket(71, 2); // L: 76
 		SEND_PRIVATE_CHAT = new ClientPacket(72, -2); // L: 77
 		field2927 = new ClientPacket(73, 2); // L: 78
 		field2979 = new ClientPacket(74, 15); // L: 79
 		field2980 = new ClientPacket(75, 15); // L: 80
 		field2967 = new ClientPacket(76, 8);
 		UNUSED_PACKET_77 = new ClientPacket(77, -1); // L: 82
-		field2983 = new ClientPacket(78, 8); // L: 83
+		OPHELD1 = new ClientPacket(78, 8); // L: 83
 		field2984 = new ClientPacket(79, 3); // L: 84
 		RESUME_PSTRING_DIALOG = new ClientPacket(80, -1); // L: 85
 		field2986 = new ClientPacket(81, 3); // L: 86
@@ -648,7 +648,7 @@ public class ClientPacket implements class260 {
 		MAP_BUILD_COMPLETE = new ClientPacket(84, 0); // L: 89
 		field2990 = new ClientPacket(85, 4); // L: 90
 		MOVE_MINIMAP_CLICK = new ClientPacket(86, -1); // L: 91
-		field2992 = new ClientPacket(87, 15); // L: 92
+		ITEM_ON_OBJ = new ClientPacket(87, 15); // L: 92
 		field2978 = new ClientPacket(88, 8); // L: 93
 		field2994 = new ClientPacket(89, 3); // L: 94
 		field2941 = new ClientPacket(90, 2); // L: 95

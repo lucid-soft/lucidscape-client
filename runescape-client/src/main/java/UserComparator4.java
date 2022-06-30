@@ -52,8 +52,8 @@ public class UserComparator4 implements Comparator {
 	)
 	@Export("updateNpcs")
 	static final void updateNpcs(boolean var0, PacketBuffer var1) {
-		Client.field615 = 0; // L: 7895
-		Client.field538 = 0; // L: 7896
+		Client.npcsToRemoveCount = 0; // L: 7895
+		Client.extendedInfoNpcCount = 0; // L: 7896
 		GrandExchangeOfferUnitPriceComparator.method6024(); // L: 7897
 
 		int var2;
@@ -114,7 +114,7 @@ public class UserComparator4 implements Comparator {
 
 				var10 = var1.readBits(1); // L: 7938
 				if (var10 == 1) { // L: 7939
-					Client.field539[++Client.field538 - 1] = var2;
+					Client.extendedInfoNpcIndexes[++Client.extendedInfoNpcCount - 1] = var2;
 				}
 
 				var4.definition = BuddyRankComparator.getNpcDefinition(var1.readBits(14)); // L: 7940
@@ -156,7 +156,7 @@ public class UserComparator4 implements Comparator {
 				var5 = var1.readBits(1); // L: 7965
 				var10 = var1.readBits(1); // L: 7966
 				if (var10 == 1) { // L: 7967
-					Client.field539[++Client.field538 - 1] = var2;
+					Client.extendedInfoNpcIndexes[++Client.extendedInfoNpcCount - 1] = var2;
 				}
 
 				var4.definition = BuddyRankComparator.getNpcDefinition(var1.readBits(14)); // L: 7968
@@ -189,8 +189,8 @@ public class UserComparator4 implements Comparator {
 		var1.exportIndex(); // L: 7990
 		SoundCache.method765(var1); // L: 7992
 
-		for (var2 = 0; var2 < Client.field615; ++var2) { // L: 7993
-			int var11 = Client.field616[var2]; // L: 7994
+		for (var2 = 0; var2 < Client.npcsToRemoveCount; ++var2) { // L: 7993
+			int var11 = Client.npcIndexesToRemove[var2]; // L: 7994
 			if (Client.npcs[var11].npcCycle != Client.cycle) { // L: 7995
 				Client.npcs[var11].definition = null; // L: 7996
 				Client.npcs[var11] = null; // L: 7997

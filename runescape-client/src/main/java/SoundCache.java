@@ -212,8 +212,8 @@ public class SoundCache {
 		garbageValue = "41"
 	)
 	static final void method765(PacketBuffer var0) {
-		for (int var1 = 0; var1 < Client.field538; ++var1) { // L: 8067
-			int var2 = Client.field539[var1]; // L: 8068
+		for (int var1 = 0; var1 < Client.extendedInfoNpcCount; ++var1) { // L: 8067
+			int var2 = Client.extendedInfoNpcIndexes[var1]; // L: 8068
 			NPC var3 = Client.npcs[var2]; // L: 8069
 			int var4 = var0.readUnsignedByte(); // L: 8070
 			int var5;
@@ -221,7 +221,7 @@ public class SoundCache {
 				var5 = var0.readUnsignedByte(); // L: 8072
 				var4 += var5 << 8; // L: 8073
 			}
-
+			// npc mask updating
 			if ((var4 & 1024) != 0) { // L: 8075
 				var3.field1189 = Client.cycle + var0.readShortAdd(); // L: 8076
 				var3.field1135 = Client.cycle + var0.readShortLE(); // L: 8077

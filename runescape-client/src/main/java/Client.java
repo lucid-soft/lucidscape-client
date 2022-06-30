@@ -561,9 +561,9 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 	@ObfuscatedGetter(
 		intValue = 1772801065
 	)
-	static int field538;
+	static int extendedInfoNpcCount;
 	@ObfuscatedName("gg")
-	static int[] field539;
+	static int[] extendedInfoNpcIndexes;
 	@ObfuscatedName("gh")
 	@ObfuscatedSignature(
 		descriptor = "Lcs;"
@@ -923,9 +923,9 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 	@ObfuscatedGetter(
 		intValue = 499701621
 	)
-	static int field615;
+	static int npcsToRemoveCount;
 	@ObfuscatedName("ld")
-	static int[] field616;
+	static int[] npcIndexesToRemove;
 	@ObfuscatedName("mx")
 	@Export("playerMenuOpcodes")
 	static final int[] playerMenuOpcodes;
@@ -1482,8 +1482,8 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 		npcs = new NPC[32768]; // L: 335
 		npcCount = 0; // L: 336
 		npcIndices = new int[32768]; // L: 337
-		field538 = 0; // L: 338
-		field539 = new int[250]; // L: 339
+		extendedInfoNpcCount = 0; // L: 338
+		extendedInfoNpcIndexes = new int[250]; // L: 339
 		packetWriter = new PacketWriter(); // L: 342
 		logoutTimer = 0; // L: 344
 		hadNetworkError = false; // L: 345
@@ -1558,8 +1558,8 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 		field612 = -1L; // L: 462
 		renderSelf = true; // L: 464
 		drawPlayerNames = 0; // L: 469
-		field615 = 0; // L: 470
-		field616 = new int[1000]; // L: 471
+		npcsToRemoveCount = 0; // L: 470
+		npcIndexesToRemove = new int[1000]; // L: 471
 		playerMenuOpcodes = new int[]{44, 45, 46, 47, 48, 49, 50, 51}; // L: 473
 		playerMenuActions = new String[8]; // L: 474
 		playerOptionsPriorities = new boolean[8]; // L: 475
@@ -4509,7 +4509,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 					return true; // L: 6242
 				}
 
-				if (ServerPacket.field3044 == var1.serverPacket) { // L: 6244
+				if (ServerPacket.RESET_ANIMS == var1.serverPacket) { // L: 6244
 					for (var20 = 0; var20 < players.length; ++var20) { // L: 6245
 						if (players[var20] != null) { // L: 6246
 							players[var20].sequence = -1;
@@ -4526,7 +4526,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 					return true; // L: 6252
 				}
 
-				if (ServerPacket.field3068 == var1.serverPacket) { // L: 6254
+				if (ServerPacket.CAM_RESET == var1.serverPacket) { // L: 6254
 					isCameraLocked = false; // L: 6255
 
 					for (var20 = 0; var20 < 5; ++var20) { // L: 6256
@@ -4611,7 +4611,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 
 				boolean var68;
 				Widget var74;
-				if (ServerPacket.field3095 == var1.serverPacket) { // L: 6315
+				if (ServerPacket.IF_SETHIDE == var1.serverPacket) { // L: 6315
 					var68 = var3.readUnsignedByte() == 1; // L: 6316
 					var5 = var3.readUnsignedIntLE(); // L: 6317
 					var74 = class140.getWidget(var5); // L: 6318
@@ -4665,7 +4665,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 					return true; // L: 6354
 				}
 
-				if (ServerPacket.field3079 == var1.serverPacket) { // L: 6356
+				if (ServerPacket.REBOOT_TIMER == var1.serverPacket) { // L: 6356
 					rebootTimer = var3.readShortLE() * 30; // L: 6357
 					field695 = cycleCntr; // L: 6358
 					var1.serverPacket = null; // L: 6359
@@ -5754,7 +5754,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 					return true; // L: 7227
 				}
 
-				if (ServerPacket.field3058 == var1.serverPacket) { // L: 7229
+				if (ServerPacket.NPC_INFO_SMALL == var1.serverPacket) { // L: 7229
 					UserComparator4.updateNpcs(false, var3); // L: 7230
 					var1.serverPacket = null; // L: 7231
 					return true; // L: 7232
@@ -6354,7 +6354,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 					if (draggedOnWidget != null && UserComparator10.method2610(clickedWidget) != null) { // L: 11694
 						PacketBufferNode var9 = EnumComposition.getPacketBufferNode(ClientPacket.field2912, packetWriter.isaacCipher); // L: 11696
 						var9.packetBuffer.readIntIME(clickedWidget.id); // L: 11697
-						var9.packetBuffer.method7863(clickedWidget.childIndex); // L: 11698
+						var9.packetBuffer.writeUnsignedShortAdd(clickedWidget.childIndex); // L: 11698
 						var9.packetBuffer.writeIntLE(draggedOnWidget.id); // L: 11699
 						var9.packetBuffer.writeShortLE(draggedOnWidget.childIndex); // L: 11700
 						var9.packetBuffer.writeUnsignedShortAddLE(clickedWidget.itemId); // L: 11701

@@ -245,7 +245,7 @@ public class TextureProvider implements TextureLoader {
 					}
 
 					if (var0 == 2) { // L: 9625
-						var10 = EnumComposition.getPacketBufferNode(ClientPacket.field2983, Client.packetWriter.isaacCipher); // L: 9627
+						var10 = EnumComposition.getPacketBufferNode(ClientPacket.OPHELD1, Client.packetWriter.isaacCipher); // L: 9627
 						var10.packetBuffer.writeInt(var1); // L: 9628
 						var10.packetBuffer.writeShort(var2); // L: 9629
 						var10.packetBuffer.writeShort(var3); // L: 9630
@@ -253,7 +253,7 @@ public class TextureProvider implements TextureLoader {
 					}
 
 					if (var0 == 3) { // L: 9633
-						var10 = EnumComposition.getPacketBufferNode(ClientPacket.OP_HELD1, Client.packetWriter.isaacCipher); // L: 9635
+						var10 = EnumComposition.getPacketBufferNode(ClientPacket.OP_HELD2, Client.packetWriter.isaacCipher); // L: 9635
 						var10.packetBuffer.writeInt(var1); // L: 9636
 						var10.packetBuffer.writeShort(var2); // L: 9637
 						var10.packetBuffer.writeShort(var3); // L: 9638
@@ -261,7 +261,7 @@ public class TextureProvider implements TextureLoader {
 					}
 
 					if (var0 == 4) { // L: 9641
-						var10 = EnumComposition.getPacketBufferNode(ClientPacket.field2915, Client.packetWriter.isaacCipher); // L: 9643
+						var10 = EnumComposition.getPacketBufferNode(ClientPacket.OP_HELD3, Client.packetWriter.isaacCipher); // L: 9643
 						var10.packetBuffer.writeInt(var1); // L: 9644
 						var10.packetBuffer.writeShort(var2); // L: 9645
 						var10.packetBuffer.writeShort(var3); // L: 9646
@@ -277,7 +277,7 @@ public class TextureProvider implements TextureLoader {
 					}
 
 					if (var0 == 6) { // L: 9657
-						var10 = EnumComposition.getPacketBufferNode(ClientPacket.field2954, Client.packetWriter.isaacCipher); // L: 9659
+						var10 = EnumComposition.getPacketBufferNode(ClientPacket.OP_HELD4, Client.packetWriter.isaacCipher); // L: 9659
 						var10.packetBuffer.writeInt(var1); // L: 9660
 						var10.packetBuffer.writeShort(var2); // L: 9661
 						var10.packetBuffer.writeShort(var3); // L: 9662
@@ -285,7 +285,7 @@ public class TextureProvider implements TextureLoader {
 					}
 
 					if (var0 == 7) { // L: 9665
-						var10 = EnumComposition.getPacketBufferNode(ClientPacket.field2963, Client.packetWriter.isaacCipher); // L: 9667
+						var10 = EnumComposition.getPacketBufferNode(ClientPacket.OP_HELD5, Client.packetWriter.isaacCipher); // L: 9667
 						var10.packetBuffer.writeInt(var1); // L: 9668
 						var10.packetBuffer.writeShort(var2); // L: 9669
 						var10.packetBuffer.writeShort(var3); // L: 9670
@@ -309,7 +309,7 @@ public class TextureProvider implements TextureLoader {
 					}
 
 					if (var0 == 10) { // L: 9689
-						var10 = EnumComposition.getPacketBufferNode(ClientPacket.field2952, Client.packetWriter.isaacCipher); // L: 9691
+						var10 = EnumComposition.getPacketBufferNode(ClientPacket.EXAMINE_ITEM, Client.packetWriter.isaacCipher); // L: 9691
 						var10.packetBuffer.writeInt(var1); // L: 9692
 						var10.packetBuffer.writeShort(var2); // L: 9693
 						var10.packetBuffer.writeShort(var3); // L: 9694
