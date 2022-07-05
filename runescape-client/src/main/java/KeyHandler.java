@@ -342,7 +342,7 @@ public final class KeyHandler implements KeyListener, FocusListener {
 			PacketBufferNode var16 = EnumComposition.getPacketBufferNode(ClientPacket.field2966, Client.packetWriter.isaacCipher); // L: 5524
 			var16.packetBuffer.writeByteNeg(var13); // L: 5525
 			var16.packetBuffer.writeShortLE(var15); // L: 5526
-			var16.packetBuffer.writeIntLE(Client.field635); // L: 5527
+			var16.packetBuffer.writeIntLE(Client.camType); // L: 5527
 			var16.packetBuffer.writeShortLE(var14); // L: 5528
 			Client.packetWriter.addNode(var16); // L: 5529
 		}

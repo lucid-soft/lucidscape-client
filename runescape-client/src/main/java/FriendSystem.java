@@ -271,7 +271,7 @@ public class FriendSystem {
 			Username var2 = new Username(var1, this.loginType); // L: 210
 			if (var2.hasCleanName()) { // L: 211
 				if (this.friendsList.removeByUsername(var2)) { // L: 212
-					Client.field689 = Client.cycleCntr; // L: 214
+					Client.lastFriendTransmit = Client.cycleCntr; // L: 214
 					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.REMOVE_FRIEND, Client.packetWriter.isaacCipher); // L: 217
 					var3.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var1)); // L: 218
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 219
@@ -309,7 +309,7 @@ public class FriendSystem {
 			Username var2 = new Username(var1, this.loginType); // L: 243
 			if (var2.hasCleanName()) { // L: 244
 				if (this.ignoreList.removeByUsername(var2)) { // L: 245
-					Client.field689 = Client.cycleCntr; // L: 247
+					Client.lastFriendTransmit = Client.cycleCntr; // L: 247
 					PacketBufferNode var3 = EnumComposition.getPacketBufferNode(ClientPacket.REMOVE_IGNORE, Client.packetWriter.isaacCipher); // L: 250
 					var3.packetBuffer.writeByte(ScriptEvent.stringCp1252NullTerminatedByteSize(var1)); // L: 251
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 252

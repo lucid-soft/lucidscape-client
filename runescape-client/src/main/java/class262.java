@@ -7,64 +7,64 @@ public class class262 {
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3020;
+	public static final class262 areaSound;
 	@ObfuscatedName("v")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3017;
+	public static final class262 objUpdate;
 	@ObfuscatedName("q")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3019;
+	public static final class262 objAdd;
 	@ObfuscatedName("f")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3018;
+	public static final class262 locAdd;
 	@ObfuscatedName("j")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3015;
+	public static final class262 locAnim;
 	@ObfuscatedName("e")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3016;
+	public static final class262 objDel;
 	@ObfuscatedName("g")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3021;
+	public static final class262 mapProjanim;
 	@ObfuscatedName("w")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3022;
+	public static final class262 mapAnim;
 	@ObfuscatedName("y")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3023;
+	public static final class262 locDel;
 	@ObfuscatedName("i")
 	@ObfuscatedSignature(
 		descriptor = "Ljw;"
 	)
-	public static final class262 field3024;
+	public static final class262 attachedPlayerObject;
 
 	static {
-		field3020 = new class262(5); // L: 5
-		field3017 = new class262(7); // L: 6
-		field3019 = new class262(5); // L: 7
-		field3018 = new class262(4); // L: 8
-		field3015 = new class262(4); // L: 9
-		field3016 = new class262(3); // L: 10
-		field3021 = new class262(15); // L: 11
-		field3022 = new class262(6); // L: 12
-		field3023 = new class262(2); // L: 13
-		field3024 = new class262(14); // L: 14
+		areaSound = new class262(5); // L: 5
+		objUpdate = new class262(7); // L: 6
+		objAdd = new class262(5); // L: 7
+		locAdd = new class262(4); // L: 8
+		locAnim = new class262(4); // L: 9
+		objDel = new class262(3); // L: 10
+		mapProjanim = new class262(15); // L: 11
+		mapAnim = new class262(6); // L: 12
+		locDel = new class262(2); // L: 13
+		attachedPlayerObject = new class262(14); // L: 14
 	}
 
 	@ObfuscatedSignature(

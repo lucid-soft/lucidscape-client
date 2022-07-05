@@ -26,6 +26,6 @@ public abstract class class128 extends Node {
 		garbageValue = "182200833"
 	)
 	public static class262[] method2856() {
-		return new class262[]{class262.field3020, class262.field3017, class262.field3019, class262.field3018, class262.field3015, class262.field3016, class262.field3021, class262.field3022, class262.field3023, class262.field3024}; // L: 17
+		return new class262[]{class262.areaSound, class262.objUpdate, class262.objAdd, class262.locAdd, class262.locAnim, class262.objDel, class262.mapProjanim, class262.mapAnim, class262.locDel, class262.attachedPlayerObject}; // L: 17
 	}
 }

@@ -526,7 +526,7 @@ public class class29 {
 									Client.scriptEvents.addFirst(var37); // L: 11459
 								}
 
-								if (Client.field689 > var9.field3426 && var9.onFriendTransmit != null) { // L: 11461
+								if (Client.lastFriendTransmit > var9.field3426 && var9.onFriendTransmit != null) { // L: 11461
 									var37 = new ScriptEvent(); // L: 11462
 									var37.widget = var9; // L: 11463
 									var37.args = var9.onFriendTransmit; // L: 11464

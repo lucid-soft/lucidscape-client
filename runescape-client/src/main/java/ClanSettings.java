@@ -1043,10 +1043,10 @@ public class ClanSettings {
 							if ((var6 & 128) != 0) { // L: 217
 								var6 += var0.readUnsignedByte() << 8;
 							}
-
 							byte var7 = class192.field2208.field2210; // L: 219
 							// right click options
 							if ((var6 & 2048) != 0) { // L: 220
+								System.out.println("options");
 								for (var8 = 0; var8 < 3; ++var8) { // L: 221
 									var5.actions[var8] = var0.readStringCp1252NullTerminated();
 								}
@@ -1057,6 +1057,7 @@ public class ClanSettings {
 							int var15;
 							// chat
 							if ((var6 & 4) != 0) { // L: 223
+								System.out.println("chat");
 								var8 = var0.readUnsignedShort(); // L: 224
 								PlayerType var9 = (PlayerType)Actor.findEnumerated(SoundSystem.PlayerType_values(), var0.readByteNeg()); // L: 225
 								boolean var10 = var0.readByteNeg() == 1; // L: 226
@@ -1098,6 +1099,7 @@ public class ClanSettings {
 
 							// spot anim
 							if ((var6 & 8192) != 0) { // L: 254
+								System.out.println("spotanim");
 								var5.spotAnimation = var0.readShortAddLE(); // L: 255
 								var8 = var0.readInt(); // L: 256
 								var5.spotAnimationHeight = var8 >> 16; // L: 257
@@ -1115,6 +1117,7 @@ public class ClanSettings {
 
 							// force movement
 							if ((var6 & 1024) != 0) { // L: 264
+								System.out.println("forcemove");
 								var5.field1140 = var0.readUnsignedByteSub(); // L: 265
 								var5.field1182 = var0.readByte(); // L: 266
 								var5.field1181 = var0.readUnsignedByteSub(); // L: 267
@@ -1142,6 +1145,7 @@ public class ClanSettings {
 							// direction
 							if ((var6 & 8) != 0) { // L: 288
 								var5.field1165 = var0.readShortAdd(); // L: 289
+								System.out.println("Direction: " + var5.field1165);
 								if (var5.pathLength == 0) { // L: 290
 									var5.orientation = var5.field1165; // L: 291
 									var5.field1165 = -1; // L: 292
@@ -1150,13 +1154,16 @@ public class ClanSettings {
 
 							// perm movement
 							if ((var6 & 256) != 0) { // L: 295
+								int enumValue = var0.readUnsignedByteSub();
 								class192[] var16 = Players.field1304; // L: 296
 								class192[] var18 = new class192[]{class192.field2212, class192.field2208, class192.field2209, class192.field2211}; // L: 300
-								var16[var4] = (class192)Actor.findEnumerated(var18, var0.readUnsignedByteSub()); // L: 302
+								var16[var4] = (class192)Actor.findEnumerated(var18, enumValue); // L: 302
+								System.out.println("Perm movement: " + enumValue);
 							}
 
 							// force chat
 							if ((var6 & 1) != 0) { // L: 304
+								System.out.println("forcechat");
 								var5.overheadText = var0.readStringCp1252NullTerminated(); // L: 305
 								if (var5.overheadText.charAt(0) == '~') { // L: 306
 									var5.overheadText = var5.overheadText.substring(1); // L: 307
@@ -1173,6 +1180,7 @@ public class ClanSettings {
 
 							// animation
 							if ((var6 & 2) != 0) { // L: 318
+								System.out.println("anim");
 								var8 = var0.readUnsignedShort(); // L: 319
 								if (var8 == 65535) { // L: 320
 									var8 = -1;
@@ -1184,6 +1192,7 @@ public class ClanSettings {
 
 							// hitsplats
 							if ((var6 & 32) != 0) { // L: 324
+								System.out.println("hitsplats");
 								var8 = var0.readByteSub(); // L: 325
 								int var19;
 								int var23;
@@ -1229,6 +1238,7 @@ public class ClanSettings {
 
 							// face entity
 							if ((var6 & 64) != 0) { // L: 362
+								System.out.println("faceentity");
 								var5.targetIndex = var0.readShortLE(); // L: 363
 								if (var5.targetIndex == 65535) { // L: 364
 									var5.targetIndex = -1;
@@ -1248,11 +1258,13 @@ public class ClanSettings {
 							// temporary movement
 							if ((var6 & 16384) != 0) { // L: 374
 								var7 = var0.readUnsignedByteSub(); // L: 375
+								System.out.println("Temp movement: " + var7);
 							}
 
 							// appearance
 							if ((var6 & 16) != 0) { // L: 377
 								var8 = var0.readUnsignedByte(); // L: 378
+								System.out.println("Appearance update - size: " + var8);
 								byte[] var21 = new byte[var8]; // L: 379
 								Buffer var26 = new Buffer(var21); // L: 380
 								var0.method7828(var21, 0, var8); // L: 381

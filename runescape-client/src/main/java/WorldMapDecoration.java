@@ -90,7 +90,7 @@ public class WorldMapDecoration {
 		descriptor = "(II)V",
 		garbageValue = "1243783436"
 	)
-	static void method4991(int var0) {
+	static void setFreecamType(int var0) {
 		Client.oculusOrbState = var0; // L: 12414
 	} // L: 12415
 }

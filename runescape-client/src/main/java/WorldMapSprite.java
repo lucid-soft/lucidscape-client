@@ -47,7 +47,7 @@ public final class WorldMapSprite {
 		int var5;
 		int var6;
 		int var7;
-		if (class262.field3022 == var0) { // L: 7490
+		if (class262.mapAnim == var0) { // L: 7490
 			var2 = var1.readUnsignedShort(); // L: 7491
 			var3 = var1.readByteSub(); // L: 7492
 			var4 = (var3 >> 4 & 7) + class10.field53; // L: 7493
@@ -63,7 +63,7 @@ public final class WorldMapSprite {
 
 		} else {
 			int var8;
-			if (class262.field3023 == var0) { // L: 7505
+			if (class262.locDel == var0) { // L: 7505
 				var2 = var1.readByteAdd(); // L: 7506
 				var3 = var2 >> 2; // L: 7507
 				var4 = var2 & 3; // L: 7508
@@ -82,7 +82,7 @@ public final class WorldMapSprite {
 				int var12;
 				int var13;
 				byte var14;
-				if (class262.field3021 == var0) { // L: 7518
+				if (class262.mapProjanim == var0) { // L: 7518
 					var2 = var1.readUnsignedByte() * 4; // L: 7519
 					var3 = var1.readUnsignedShort(); // L: 7520
 					var4 = var1.readUnsignedShort(); // L: 7521
@@ -109,7 +109,7 @@ public final class WorldMapSprite {
 					}
 
 				} else {
-					if (class262.field3020 == var0) { // L: 7545
+					if (class262.areaSound == var0) { // L: 7545
 						var2 = var1.readByteAdd(); // L: 7546
 						var3 = var2 >> 4 & 15; // L: 7547
 						var4 = var2 & 7; // L: 7548
@@ -131,7 +131,7 @@ public final class WorldMapSprite {
 						}
 					}
 
-					if (class262.field3017 == var0) { // L: 7568
+					if (class262.objUpdate == var0) { // L: 7568
 						var2 = var1.readUnsignedByte(); // L: 7569
 						var3 = (var2 >> 4 & 7) + class10.field53; // L: 7570
 						var4 = (var2 & 7) + class298.field3558; // L: 7571
@@ -154,7 +154,7 @@ public final class WorldMapSprite {
 
 					} else {
 						TileItem var32;
-						if (class262.field3019 == var0) { // L: 7591
+						if (class262.objAdd == var0) { // L: 7591
 							var2 = var1.readUnsignedShort(); // L: 7592
 							var3 = var1.readByteSub(); // L: 7593
 							var4 = (var3 >> 4 & 7) + class10.field53; // L: 7594
@@ -173,7 +173,7 @@ public final class WorldMapSprite {
 							}
 
 						} else {
-							if (class262.field3024 == var0) { // L: 7607
+							if (class262.attachedPlayerObject == var0) { // L: 7607
 								var2 = var1.readByteAdd(); // L: 7608
 								var3 = (var2 >> 4 & 7) + class10.field53; // L: 7609
 								var4 = (var2 & 7) + class298.field3558; // L: 7610
@@ -246,7 +246,7 @@ public final class WorldMapSprite {
 								}
 							}
 
-							if (class262.field3015 == var0) { // L: 7672
+							if (class262.locAnim == var0) { // L: 7672
 								var2 = var1.readByteAdd(); // L: 7673
 								var3 = var2 >> 2; // L: 7674
 								var4 = var2 & 3; // L: 7675
@@ -307,7 +307,7 @@ public final class WorldMapSprite {
 									}
 								}
 
-							} else if (class262.field3018 == var0) { // L: 7718
+							} else if (class262.locAdd == var0) { // L: 7718
 								var2 = var1.readByteNeg(); // L: 7719
 								var3 = var2 >> 2; // L: 7720
 								var4 = var2 & 3; // L: 7721
@@ -320,7 +320,7 @@ public final class WorldMapSprite {
 									Canvas.updatePendingSpawn(PacketWriter.Client_plane, var7, var8, var5, var9, var3, var4, 0, -1); // L: 7728
 								}
 
-							} else if (class262.field3016 == var0) { // L: 7732
+							} else if (class262.objDel == var0) { // L: 7732
 								var2 = var1.readUnsignedShort(); // L: 7733
 								var3 = var1.readByteNeg(); // L: 7734
 								var4 = (var3 >> 4 & 7) + class10.field53; // L: 7735
